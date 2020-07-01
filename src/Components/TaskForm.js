@@ -1,9 +1,11 @@
 import React from 'react'
 
-export default props =>
+const TaskForm = props =>
   <form>
     <input
       type='text'
       className="p-2 rounded border todo-input"
       placeholder="Add something?"/>
   </form>
+
+  export default TaskForm

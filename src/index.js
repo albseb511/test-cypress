@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import TodoApp from './Components/TodoApp'
-import './styles.css'
+import TaskApp from './Components/TaskApp'
 
-ReactDOM.render(<TodoApp />, document.getElementById('root'))
+ReactDOM.render(<TaskApp />, document.getElementById('root'))

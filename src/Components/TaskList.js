@@ -1,17 +1,18 @@
 import React from 'react'
 
-const TodoItem = props =>
+const TaskItem = props =>
   <li>
     <div >
       <input type="checkbox" />
       <label>
         {' '}
       </label>
-      <button className="btn-danger" />
     </div>
   </li>
 
-export default props =>
+const TaskList = props =>
   <ul className="todo-list">
-    {props.todos.map(todo => <TodoItem />)}
+    {props.todos.map(todo => <TaskItem />)}
   </ul>
+
+export default TaskList

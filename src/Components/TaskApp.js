@@ -1,8 +1,7 @@
 import React, {Component} from 'react'
-import {BrowserRouter as Router, Route} from 'react-router-dom'
-import TodoForm from './TodoForm'
-import TodoList from './TodoList'
-import Footer from './Footer'
+import {BrowserRouter as Router} from 'react-router-dom'
+import TaskForm from './TaskForm'
+import TaskList from './TaskList'
 
 
 export default class TodoApp extends Component {
@@ -21,13 +20,12 @@ export default class TodoApp extends Component {
       <Router>
         <div className="container-fluid text-center">
           <header className="p-2">
-            <h1>todos</h1>
-            <TodoForm />
+            <h1>Tasks</h1>
+            <TaskForm />
           </header>
           <section className="mt-2">
-            <TodoList todos={this.state.todos} />
+            <TaskList todos={this.state.todos} />
           </section>
-          <Footer />
         </div>
       </Router>
     )
